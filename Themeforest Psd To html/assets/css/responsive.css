@@ -1,0 +1,140 @@
+/*******************************
+  All Responsive Code
+*******************************/
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width:992px) and (max-width:1100px) {}
+
+
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-menu ul li {
+    float: left;
+    margin-left: 23px;
+  }
+  
+  .header-text p {
+    width: 600px;
+  }
+  
+  .header-text h1 {
+    font-size: 40px;
+  }
+}
+
+/* mobile menu */
+@media only screen and (max-width:767px) {
+  .navbar {
+    background: #1E003D;
+    padding: 10px 0
+  }
+  
+  .navbar .navbar-brand img {
+    max-width: 50px
+  }
+  
+  .navbar .navbar-toggler i {
+    color: #fff
+  }
+  
+  .navar .navbar-nav li {
+    text-align: center
+  }
+}
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) {}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 479px) and (max-width: 767px) {
+  /* margin: 30px 0px 0px 30px; */
+  
+  .main-menu ul li {
+    float: none;
+    margin-left: 10px;
+  }
+  
+  .main-menu ul {
+    float: left;
+  }
+  
+  .main-menu ul li a {
+    padding: 8px 0px;
+  }
+  
+  .header-text p {
+    max-width: 380px;
+    font-size: 12px;
+  }
+  
+  .header-text h1 {
+    font-size: 30px;
+  }
+  
+  .about-right {
+    margin-top: 40px;
+  }
+  
+  .counter-box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 28px;
+  }
+  
+  .blog-margin {
+    margin: 25px 0px;
+  }
+}
+@media only screen and (min-width:300px) and (max-width:479px) {
+  .main-menu ul li {
+    float: none;
+    margin-left: 10px;
+  }
+  
+  .main-menu ul {
+    float: left;
+  }
+  
+  .main-menu ul li a {
+    padding: 8px 0px;
+  }
+  
+  .header-text p {
+    max-width: 280px;
+    font-size: 12px;
+  }
+  
+  .header-text h1 {
+    font-size: 25px;
+  }
+  
+  .about-right {
+    margin-top: 25px;
+  }
+  
+  .counter-box {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  
+  .blog-margin {
+    margin: 20px 0px;
+  }
+}

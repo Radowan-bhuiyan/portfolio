@@ -1,0 +1,1181 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: Themeforest - Creatrive / Corporate / Single Page Template
+Created By: Codeshaper
+Website: http://codeshaper.net
+Description: Themeforest is Fully Responsive Creative / Corporate / Single Page Bootstrap Template With Awesome Sections.
+Version: v1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Support: http://codeshaper.net/contact.php
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+  1. Theme Default Css
+  2. Header Menu Css
+  3. Header Img Css
+  4. About Css
+  5. Videos Css
+  6. Services Css
+  7. Skill Css
+  8. Counter Css
+  9. Portfolio Css
+  10. Team  Css
+  11. Testimonial Css
+  12. Blog Css
+  13. Contact Css
+  14. Footer Css
+  -------------------------------------------------------------------*/
+
+
+/*
+==========================================
+    Google fonts
+==========================================
+*/
+
+
+/*font-family: 'Raleway', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+/*
+==========================================
+   1. Theme Default CSS
+==========================================
+*/
+
+html {
+    font-size: 62.5%;
+    /*font-size: 10px;*/
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+a,
+i,
+button,
+img,
+input,
+span,
+*:before,
+*:after {
+    -webkit-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a:focus {
+    color: inherit;
+    outline: medium none;
+    transform: scale(1);
+    text-decoration: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff;
+    background: #ff0000;
+    text-align: center;
+    outline: none;
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    border: none;
+    transition: .3s;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+.content-top-space {
+    margin-top: 40px;
+}
+
+.section-header h2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section-header h2 span {
+    color: #ff0000
+}
+
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    width: 156px;
+    height: 1px;
+    background: #ff0000;
+    top: 100%;
+    left: 50%;
+    margin-top: 8px;
+    margin-left: -78px;
+}
+
+.section-header h2::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+    border-radius: 50px;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+}
+
+
+/*
+==========================================
+    Header Menu Css
+==========================================
+*/
+
+header {
+    position: relative;
+}
+
+.logo img {
+    width: 40%;
+    margin-top: 14px;
+}
+
+#site-nav::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    content: "";
+    opacity: .49;
+}
+
+#site-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 0;
+}
+
+.main-menu ul li {
+    float: left;
+    margin-left: 30px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    transition: .3s;
+}
+
+.main-menu ul li a:hover {
+    color: #ff0000;
+}
+
+.main-menu ul li a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    visibility: hidden;
+    opacity: 1;
+    background: blue;
+}
+
+.main-menu ul li a:hover::after {
+    width: 100%;
+    visibility: visible;
+}
+
+.nav-link {
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    text-transform: capitalize;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-item .nav-link.active {
+    color: #2980b9 !important;
+}
+
+.navbar.fixed {
+    position: fixed !important;
+    padding: 10px 0 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1E003D;
+    animation: nav-appear;
+    -webkit-animation: nav-appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+@keyframes nav-appear {
+    0% {
+        top: -100%
+    }
+    25% {
+        top: -75%
+    }
+    75% {
+        top: -25%
+    }
+    100% {
+        top: 0%
+    }
+}
+
+nav.black {
+    background: #000;
+}
+
+.logo img {
+    width: 40%;
+    margin-top: 14px;
+}
+
+.header-main {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-main::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    content: "";
+    opacity: .49;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background: red;
+    transition: 0.4s;
+}
+
+.change .bar2 {
+    opacity: 0;
+    background: red;
+    transition: 0.4s;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    background: red;
+    transition: 0.4s;
+}
+
+
+/*
+==========================================
+    Header Img Css
+==========================================
+*/
+
+.carousel.slide,
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.header-img {
+    /*position: relative;*/
+    /*background:linear-gradient(rgba(211, 39, 39, 0.66), rgba(211, 39, 39, 0.66)), url('../img/Colors.jpg');*/
+    background: url('../img/Colors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    /*clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100*/
+}
+
+.header-img.first {
+    background: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.header-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #555554;
+    opacity: .60;
+    z-index: -1;
+}
+
+.header-img .container,
+.header-img .row,
+.header-img .col-md-12 {
+    color: #fff;
+    height: 100%;
+}
+
+.d-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*    margin:0 auto;*/
+}
+
+.d-table-cell {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.header-text h1 span {
+    color: #ff0000;
+}
+
+.header-text p {
+    /*check the difference max-width only width*/
+    max-width: 850px;
+    /*width: 850px;*/
+    margin: 23px auto 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header-text a .btn {
+    font-weight: 600;
+}
+
+.header-text a .btn:hover {
+    background: #fff;
+    color: #ff0000;
+}
+
+
+/*
+==========================================
+    About Css
+==========================================
+*/
+
+.about-left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+}
+
+.about-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-left .about-left-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 12px 0px;
+}
+
+.about-left-details::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3c1917;
+    opacity: .75;
+    z-index: -1;
+}
+
+.about-left h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about-left ul {
+    margin-top: 10px
+}
+
+.about-left ul li {
+    display: inline;
+}
+
+.about-left ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    padding: 7px;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+.about-left ul li a:hover i {
+    transform: rotate(360deg);
+}
+
+.about-right h3 {
+    font-weight: 600;
+}
+
+.about-right p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 20px 0px;
+}
+
+.about-right a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 22px;
+    text-decoration: none;
+    background: #ff0000;
+    color: #fff;
+    border: 1px solid #ff0000;
+    transition: .2s;
+    text-align: center;
+    /*margin-top:30px;*/
+}
+
+.about-right a:hover {
+    background: #fff;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+
+/*
+==========================================
+    Videos Css
+==========================================
+*/
+
+.video-area {
+    background: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url('../img/fasion8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.video-area h2 {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.video-icon a {
+    font-size: 32px;
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 70px;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.video-icon a:hover {
+    background: #fff;
+    color: black;
+}
+
+
+/*
+==========================================
+    Services Css
+==========================================
+*/
+
+.service_box {
+    margin-top: 40px;
+}
+
+.service_box h4 {
+    margin: 14px 0px;
+}
+
+.service_box i {
+    font-size: 38px;
+    color: #ff0000;
+}
+
+
+/*
+==========================================
+    Skill Css
+==========================================
+*/
+
+.myskill {
+    background: #f2f2f2;
+}
+
+.skill-progress-bar h3,
+.skill-text h3 {
+    font-size: 26px;
+}
+
+.skill-progress-bar p,
+.skill-text p {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #2d2d2d;
+}
+
+.skill-text p:last-child {
+    margin-top: 22px;
+}
+
+.skillbar.html .filled {
+    background-color: #ff0000;
+}
+
+.skillbar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    overflow: hidden;
+    height: 16px;
+    background-color: #000;
+    border-radius: 25px;
+}
+
+.skillbar .filled {
+    z-index: 8;
+    position: absolute;
+    top: 33%;
+    left: 7px;
+    background-color: rgba(0, 80, 80, .3);
+    height: 36%;
+    width: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.skillbar .percent {
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.skillbar .percent,
+.skillbar .title {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+
+
+/*
+==========================================
+    Counter Css
+==========================================
+*/
+
+.counter {
+    background: linear-gradient(rgba(255, 0, 0, 0.43), rgba(255, 0, 0, 0.43)), url('../img/fasion5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+    /*height: 100%;*/
+}
+
+.counter-box p i {
+    font-size: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 80px;
+}
+
+.counter-box h6 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.counter-box span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/*
+==========================================
+    Porfolio  Css
+==========================================
+*/
+
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu button {
+    background: transparent;
+    font-size: 17px;
+    padding: 0 9px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.portfolio-menu button:hover {
+    color: #ff0000;
+}
+
+.portfolio-content {
+    margin-top: 30px;
+}
+
+.portfolio-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.mixitup-control-active {
+    color: #ff0000;
+}
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .3s;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.portfolio-hover::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    content: "";
+    opacity: .49;
+}
+
+.portfolio-item:hover .portfolio-hover {
+    visibility: visible;
+}
+
+.portfolio-hover a {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*
+==========================================
+   Team Css
+==========================================
+*/
+
+.team {
+    background: #ddd;
+}
+
+.item img {
+    border: 1px solid #ff0000;
+    width: 100%;
+    max-height: 50vh;
+}
+
+.item {
+    position: relative;
+}
+
+.item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.item-hover:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    opacity: .5;
+    z-index: -1;
+    transition: .3s;
+    visibility: hidden;
+}
+
+.item:hover .item-hover:after {
+    visibility: visible;
+    bottom: 0px;
+}
+
+.item:hover .item-hover-content {
+    bottom: 0px;
+}
+
+.item-hover-content {
+    position: absolute;
+    bottom: -58px;
+    text-align: center;
+    color: #fff;
+    background: red;
+    width: 100%;
+    transition: .3s;
+}
+
+.item-hover-content ul li {
+    display: inline;
+}
+
+.item-hover-content ul li a {
+    color: #fff;
+    margin: 0px 5px;
+}
+
+.item-hover-content ul {
+    padding: 10px 0px;
+}
+
+.item-hover-content h4 {
+    padding-top: 10px;
+}
+
+
+/*
+==========================================
+ Testimonial Css
+==========================================
+*/
+
+.testimonial {
+    background: url('../img/portfolio/portfolio-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.testimonial::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: .5;
+    z-index: -1;
+}
+
+.testimonial p {
+    font-weight: 300;
+}
+
+.owl-carousel.owl-carousel-testimonial .owl-item img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.owl-carousel.owl-carousel-testimonial h2 {
+    margin: 20px 0px;
+}
+
+.owl-carousel.owl-carousel-testimonial p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/*
+==========================================
+    Blog Css
+==========================================
+*/
+
+.blog-item {
+    box-shadow: 0px 0px 15px #ddd;
+    text-align: center;
+}
+
+.blog-img {
+    border-bottom: 5px solid #000;
+}
+
+.blog-img img {
+    max-width: 100%;
+}
+
+h2.blog-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+article.blog-details {
+    padding: 15px 20px;
+}
+
+p.date {
+    font-size: 14px;
+    font-style: italic;
+    margin: 8px 0px;
+}
+
+p.date i {
+    margin-right: 4px;
+    color: red;
+    font-size: 16px;
+}
+
+.overlay {
+    position: relative;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.bg-overlay {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 130px;
+    height: 130px;
+    background-color: #03a9f4;
+    z-index: 1;
+    border-radius: 100%;
+    transition:1s;
+}
+
+.blog-item:hover .bg-overlay {
+    right: 0;
+    bottom: 0;
+    transform: scale(10) translateZ(0);
+}
+
+a.learn-more {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 10;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+}
+
+.blog-item:hover .learn-more {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+
+/*
+==========================================
+    Contact Css
+==========================================
+*/
+
+.contact {
+    background: linear-gradient(rgba(35, 139, 62, 0.62), rgba(35, 139, 62, 0.62)), url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact textarea.form-control {
+    background: transparent;
+    height: 100px;
+    margin: 30px 0px;
+    border: 1px solid #fff;
+}
+
+.submit-middle {
+    padding-bottom: 65px;
+}
+
+.submit-middle button {
+    display: inline-block;
+    padding: 10px 40px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.form-control {
+    color: black;
+    font-size: 14px;
+}
+
+.contact input.form-control::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+textarea.form-control::placeholder {
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    background: transparent;
+    height: 34px;
+    border: 1px solid #fff;
+}
+
+
+/*
+==========================================
+    Footer Css
+==========================================
+*/
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    z-index: 999;
+    background: #525274;
+    /*overflow: hidden;*/
+}
+
+.footer-section li {
+    display: inline-block;
+}
+
+
+.footer-section li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.footer-section li:last-child {
+    padding: 0px 0px;
+}
+
+.footer-section li a:hover i {
+    transform: rotate(360deg);
+}
+
+.footer-section p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0px 4px;
+}
+
+.goTop {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #1E003D;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 99999;
+}
